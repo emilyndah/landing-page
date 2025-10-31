@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" role="img" aria-labelledby="title desc">
+  <title id="title">Mapa visual simplificado da landing page</title>
+  <desc id="desc">Diagrama em blocos destacando as principais seções da página IA Jovem</desc>
+  <style>
+    .panel { fill: #1e1a3a; stroke: #b3a4ff; stroke-width: 3; rx: 12; }
+    .label { fill: #f8f6ff; font-family: 'Press Start 2P', sans-serif; font-size: 10px; text-anchor: middle; }
+    .emoji { font-size: 14px; }
+    .bg { fill: #0d0a1f; }
+  </style>
+  <rect class="bg" x="0" y="0" width="400" height="220" rx="20" />
+  <rect class="panel" x="30" y="20" width="340" height="50" />
+  <text class="label" x="200" y="50">Hero &amp; CTA <tspan class="emoji">🎯</tspan></text>
+  <rect class="panel" x="30" y="85" width="160" height="45" />
+  <text class="label" x="110" y="115">Skills HUD <tspan class="emoji">🛡️</tspan></text>
+  <rect class="panel" x="210" y="85" width="160" height="45" />
+  <text class="label" x="290" y="115">Sobre Mim <tspan class="emoji">🧙‍♀️</tspan></text>
+  <rect class="panel" x="30" y="145" width="160" height="55" />
+  <text class="label" x="110" y="175">Projetos <tspan class="emoji">🗺️</tspan></text>
+  <rect class="panel" x="210" y="145" width="160" height="55" />
+  <text class="label" x="290" y="175">Contato <tspan class="emoji">💌</tspan></text>
+</svg>
