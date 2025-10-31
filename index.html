@@ -4,147 +4,150 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IA Jovem – A Jornada Digital de Emily Rodrigues</title>
-    <!-- Fonte pixelada -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Áudio de jingle chiptune curto no carregamento -->
     <audio id="intro-jingle" preload="auto">
-        <source src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQwAAAABAICAf4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gA==" type="audio/wav">
+        <source src="data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQwAAAABAICAf4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gA==" type="audio/wav">
     </audio>
-
-    <!-- Áudio de clique retrô reutilizado pelos botões -->
     <audio id="click-sound" preload="auto">
-        <source src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQwAAAABAICAf4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gA==" type="audio/wav">
+        <source src="data:audio/wav;base64,UklGRigAAABXQVZFZm10IBAAAAABAAEAQB8AAIA+AAACABAAZGF0YQwAAAABAICAf4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gH+Af4B/gA==" type="audio/wav">
     </audio>
 
-    <!-- Botão mute para jingle -->
-    <button class="mute-toggle" aria-label="Alternar som" title="Mute / Unmute">
-        🔊
-    </button>
+    <button class="mute-toggle" aria-label="Alternar som" title="Mute / Unmute">🔊</button>
 
     <main>
         <header class="hero" id="press-start">
-            <div class="hero__panel">
-                <div class="hero__avatar">
-                    <img src="avatar.png" alt="Avatar pixelado de Emily Rodrigues">
-                </div>
-                <div class="hero__info">
-                    <h1>Emily Rodrigues – AI Apprentice Level 1</h1>
-                    <p class="hero__subtitle">Embarcando na Quest de Machine Learning e Data Science. Acompanhe a XP em tempo real.</p>
-                    <div class="hero__cta">
-                        <a href="#save-game" class="btn btn--primary" data-sfx>Join the Quest / Adicionar à Party</a>
-                    </div>
-                </div>
+            <div class="hero__glow"></div>
+            <div class="hero__content">
+                <p class="hero__tag">[Press Start]</p>
+                <h1>🎮 Emily Rodrigues – AI Apprentice Level 1</h1>
+                <h2>💡 Embarcando na Quest de Inteligência Artificial e Ciência de Dados.</h2>
+                <p class="hero__intro">Interface inicial da jornada digital de uma exploradora de dados pronta para desbloquear novas habilidades e compartilhar XP com a sua party.</p>
+                <a href="https://www.linkedin.com" class="btn btn--primary" data-sfx target="_blank" rel="noopener">Join the Quest</a>
             </div>
         </header>
 
-        <section class="skills" id="manual">
-            <h2>[Manual de Estratégia] – Skills &amp; Atributos</h2>
+        <section class="skills" id="manual-de-estrategia">
+            <h2>[Manual de Estratégia] – Habilidades &amp; Ferramentas</h2>
             <div class="skills__grid">
-                <article class="skill" data-skill="95">
-                    <div class="skill__label">Python 🐍</div>
+                <article class="skill" data-value="95">
+                    <h3 class="skill__title">🐍 Python</h3>
                     <div class="skill__bar">
-                        <div class="skill__progress" style="--target:95%"></div>
+                        <span class="skill__progress" style="--target:95%"></span>
                     </div>
                     <span class="skill__value">95%</span>
                 </article>
-                <article class="skill" data-skill="80">
-                    <div class="skill__label">SQL 💾</div>
+                <article class="skill" data-value="80">
+                    <h3 class="skill__title">💾 SQL</h3>
                     <div class="skill__bar">
-                        <div class="skill__progress" style="--target:80%"></div>
+                        <span class="skill__progress" style="--target:80%"></span>
                     </div>
                     <span class="skill__value">80%</span>
                 </article>
-                <article class="skill" data-skill="60">
-                    <div class="skill__label">Machine Learning 🤖</div>
+                <article class="skill" data-value="90">
+                    <h3 class="skill__title">📊 Excel / Power BI</h3>
                     <div class="skill__bar">
-                        <div class="skill__progress" style="--target:60%"></div>
+                        <span class="skill__progress" style="--target:90%"></span>
                     </div>
-                    <span class="skill__value">60%</span>
+                    <span class="skill__value">90%</span>
                 </article>
-                <article class="skill" data-skill="70">
-                    <div class="skill__label">Data Visualization 📊</div>
+                <article class="skill" data-value="70">
+                    <h3 class="skill__title">🤖 Machine Learning</h3>
                     <div class="skill__bar">
-                        <div class="skill__progress" style="--target:70%"></div>
+                        <span class="skill__progress" style="--target:70%"></span>
                     </div>
                     <span class="skill__value">70%</span>
                 </article>
+                <article class="skill" data-value="65">
+                    <h3 class="skill__title">☁️ Cloud &amp; IA Generativa</h3>
+                    <div class="skill__bar">
+                        <span class="skill__progress" style="--target:65%"></span>
+                    </div>
+                    <span class="skill__value">65%</span>
+                </article>
             </div>
         </section>
 
-        <section class="about" id="player-one">
+        <section class="about" id="player-one-info">
             <h2>[Player One Info] – Sobre Mim</h2>
-            <div class="dialogue-box">
-                <p>“Comecei minha jornada com o feitiço ‘print(Hello World)’ e desde então sigo evoluindo rumo ao boss final: o domínio da Inteligência Artificial.”</p>
+            <div class="about__card">
+                <p>👩‍💻 Sou estudante de Inteligência Artificial, apaixonada por dados, tecnologia e inovação.<br>
+                    Comecei minha jornada com o feitiço <span class="about__spell">print('Hello World')</span> e sigo evoluindo com cada nova missão concluída.<br>
+                    Busco transformar conhecimento técnico em impacto real — com curiosidade, disciplina e um toque de criatividade gamer.</p>
             </div>
         </section>
 
-        <section class="projects" id="world-map">
-            <h2>[Mapa do Mundo] – Projetos</h2>
-            <div class="projects__grid">
-                <article class="project-card">
-                    <h3>Quest: Predictive Potion Mixer</h3>
-                    <p class="project-card__status">Status: <span>In Progress</span></p>
-                    <ul class="project-card__tech">
-                        <li>Python</li>
-                        <li>TensorFlow</li>
-                        <li>Streamlit</li>
+        <section class="inventory" id="inventario-profissional">
+            <h2>[Inventário Profissional] – Formação &amp; Experiências</h2>
+            <div class="inventory__grid">
+                <article class="inventory__card">
+                    <h3>🎓 Formação</h3>
+                    <ul>
+                        <li>📘 Bacharelado em Inteligência Artificial – UniEVANGÉLICA</li>
+                        <li>🧠 Cursos: Python, SQL, IA Generativa, Scrum, Cloud Computing</li>
                     </ul>
-                    <a href="https://github.com/" class="btn btn--secondary" data-sfx>Open Quest Log</a>
                 </article>
-                <article class="project-card">
-                    <h3>Quest: SQL Dungeon Explorer</h3>
-                    <p class="project-card__status">Status: <span>Complete</span></p>
-                    <ul class="project-card__tech">
-                        <li>PostgreSQL</li>
-                        <li>dbt</li>
-                        <li>Metabase</li>
+                <article class="inventory__card">
+                    <h3>💼 Experiências / Projetos Acadêmicos</h3>
+                    <ul>
+                        <li>🧠 Projeto Integrador “LUMI – Assistente Acadêmica”: desenvolvimento em Flask e Python</li>
+                        <li>🏛️ Hands-On: Arquitetura Medalhão (Bronze / Silver / Gold)</li>
+                        <li>🛠️ Prototipagem de sistemas com Design Thinking</li>
                     </ul>
-                    <a href="https://github.com/" class="btn btn--secondary" data-sfx>Open Quest Log</a>
                 </article>
-                <article class="project-card">
-                    <h3>Quest: Pixel Vision Dashboard</h3>
-                    <p class="project-card__status">Status: <span>In Progress</span></p>
-                    <ul class="project-card__tech">
-                        <li>Python</li>
-                        <li>Plotly</li>
-                        <li>Figma</li>
+                <article class="inventory__card">
+                    <h3>🌐 Idiomas</h3>
+                    <ul>
+                        <li>🇧🇷 Português – Nativo</li>
+                        <li>🇺🇸 Inglês – Intermediário</li>
                     </ul>
-                    <a href="https://github.com/" class="btn btn--secondary" data-sfx>Open Quest Log</a>
                 </article>
             </div>
         </section>
 
-        <section class="contact" id="save-game">
-            <h2>[Save Game Progress] – Formulário de Contato</h2>
-            <p class="contact__intro">Não perca o próximo Level Up.</p>
-            <form id="contact-form" novalidate>
-                <label for="name">Nome</label>
-                <input type="text" id="name" name="name" placeholder="Digite seu codinome">
-
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail de guilda">
-
-                <button type="submit" class="btn btn--primary" data-sfx>Save Data</button>
-                <p class="contact__success" role="alert" aria-live="polite">✔️ Save Complete!</p>
-            </form>
+        <section class="quests" id="mapa-do-mundo">
+            <h2>[Mapa do Mundo] – Quests e Projetos</h2>
+            <div class="quests__grid">
+                <article class="quest-card quest-card--active">
+                    <header>
+                        <h3>🧭 LUMI – Assistente Acadêmica</h3>
+                        <span class="quest-card__status">In Progress</span>
+                    </header>
+                    <p>Flask, Python, IA</p>
+                </article>
+                <article class="quest-card quest-card--complete">
+                    <header>
+                        <h3>📊 Data Dashboard – Power BI</h3>
+                        <span class="quest-card__status">Complete</span>
+                    </header>
+                    <p>Análise e visualização de dados</p>
+                </article>
+                <article class="quest-card quest-card--active">
+                    <header>
+                        <h3>🤖 Chatbot IA – Protótipo Flask</h3>
+                        <span class="quest-card__status">In Progress</span>
+                    </header>
+                    <p>NLP, APIs e integração web</p>
+                </article>
+            </div>
+            <div class="quests__cta">
+                <a href="https://github.com" class="btn btn--secondary" data-sfx target="_blank" rel="noopener">Open Quest Log</a>
+            </div>
         </section>
     </main>
 
     <footer class="footer" id="terminal">
+        <p class="footer__prompt">[Terminal – System Info]</p>
+        <p class="footer__copy">©2025 – Player: Emily Rodrigues 💗 Press any key to continue...</p>
         <div class="footer__links">
-            <a href="https://www.linkedin.com" class="footer__link" data-sfx>
-                <span class="footer__icon">🕹</span> LinkedIn
-            </a>
-            <a href="https://github.com" class="footer__link" data-sfx>
-                <span class="footer__icon">🕹</span> GitHub
-            </a>
+            <a href="https://www.linkedin.com" class="footer__link" data-sfx target="_blank" rel="noopener">💼 LinkedIn</a>
+            <a href="https://github.com" class="footer__link" data-sfx target="_blank" rel="noopener">🐙 GitHub</a>
+            <a href="mailto:emily.rodrigues@example.com" class="footer__link" data-sfx>✉️ E-mail</a>
         </div>
-        <p class="footer__copy">©2025 – Player: Emily Rodrigues. All rights reserved.</p>
     </footer>
 
     <script src="game.js" defer></script>
